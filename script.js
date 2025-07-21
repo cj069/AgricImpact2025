@@ -66,6 +66,9 @@ if (window.location.pathname.endsWith('edit-profile.html')) {
         sessionStorage.setItem('loggedInFarmer', JSON.stringify(farmers[idx]));
         document.getElementById('editMessage').style.color = '#2e7d32';
         document.getElementById('editMessage').textContent = 'Profile updated!';
+        setTimeout(function() {
+          window.location.href = 'index.html';
+        }, 300);
       }
     });
   }

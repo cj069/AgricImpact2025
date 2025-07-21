@@ -6,16 +6,21 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-   <header class="main-header">
-    <div class="header-flex">
-      <h1 class="header-left">Meet Farmers</h1>
-      <nav class="header-nav">
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register Farmer</a>
-      </nav>
-    </div>
-  </header>
+    <header class="main-header">
+        <div class="header-flex">
+            <div> 
+                <h1 class="header-left">Meet Farmers</h1>
+            </div>
+      
+            <div>
+                <nav class="header-nav">
+                    <a href="index.html">Home</a>
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register As Farmer</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
   <h2>Edit Profile</h2>
   
@@ -27,8 +32,20 @@
     <input type="password" id="editPassword" placeholder="Password" required>
     <input type="text" id="editLocation" placeholder="Farm Location" required>
     <input type="text" id="editCrop" placeholder="Main Crop" required>
-    <button type="submit">Save Changes</button>
+    <button onclick="document.getElementById('editForm').addEventListener('submit', function(event) {
+      setTimeout(function() {
+        window.location.href = 'index.html';
+      }, 300);
+    });" type="submit">Save Changes</button>
   </form>
+  <script>
+    // After updating, redirect to homepage
+    document.getElementById('editForm').addEventListener('submit', function(event) {
+      setTimeout(function() {
+        window.location.href = 'index.html';
+      }, 300);
+    });
+  </script>
   <div id="editMessage" style="text-align:center;margin-top:16px;"></div>
   <script src="script.js"></script>
 </body>
