@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Registration</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="header-flex">
+      <h1 class="header-left">Meet Farmers</h1>
+      <nav class="header-nav">
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="index.html">Register Farmer</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <h2>Farmer Registration Portal</h2>
+  
+  <form id="farmerForm" enctype="multipart/form-data">
+    <input type="file" id="farmerImage" accept="image/*" style="display:block;margin-bottom:16px;">
+    <input type="text" id="name" placeholder="Farmer's Name" required>
+    <input type="text" id="number" placeholder="Farmer's Number" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <input type="text" id="location" placeholder="Farm Location" required>
+    <input type="text" id="crop" placeholder="Main Crop" required>
+    <button type="submit">Register Farmer</button>
+  </form>
+ 
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
