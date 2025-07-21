@@ -30,11 +30,26 @@
     <input type="password" id="password" placeholder="Password" required>
     <input type="text" id="location" placeholder="Farm Location" required>
     <input type="text" id="crop" placeholder="Main Crop" required>
-    <button type="submit">Register Farmer</button>
+    <button onclick="homepage()" type="submit">Register Farmer</button>
   </form>
  
 
  
   <script src="script.js"></script>
+  <script>
+    // Override form submit to redirect after registration
+     function homepage(){ const form = document.getElementById('farmerForm');
+    if (form) {
+      form.addEventListener('submit', function(event) {
+        // Wait a short moment to ensure localStorage is updated
+        setTimeout(function() {
+          window.location.href = 'index.html';
+        }, 300);
+      });
+    }
+  }
+    // Handle image preview
+
+  </script>
 </body>
 </html>
