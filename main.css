@@ -262,12 +262,19 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: #f5f5f5; /* 60%: light neutral background */
+  background-color: #f5f5f5ad; /* 60%: light neutral background */
+  /* Crop farmland with cattle and chickens */
+  background-image: url('images/crop-sun.jpg'); /* Crop farm with cattle */
+  /* If you want a more specific image with chickens, replace the above URL with a suitable one. */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 /* 30% Accent: header, buttons, form backgrounds */
 .main-header, .profile-card, #farmerForm, .login-form {
-  background: #e8f5e9;
+  background: #e8f5e9b9;
 }
 
 #farmerForm, .login-form {
@@ -276,13 +283,13 @@ body {
 
 button, #farmerForm button[type="submit"], .login-form button[type="submit"] {
   background-color: #2e7d32;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* 10% Highlight: links, hover, icons, focus */
 .header-nav a:hover, .header-nav a:focus, button:hover, #farmerForm button[type="submit"]:hover, .login-form button[type="submit"]:hover {
   background: #ffd600;
-  color: #1b5e20;
+  color: #2e5e1b;
 }
 
 #searchInput:focus {
