@@ -1,8 +1,8 @@
 /* Footer styles */
 .main-footer {
   width: 100%;
-  background: rgba(232, 245, 233, 0.7); /* Same as header but with reduced opacity */
-  color: #2e7d32;
+  background: rgba(0, 0, 0, 0.658); /* Black with slight opacity for depth */
+  color: #fff;
   text-align: center;
   padding: 18px 0 12px 0;
   position: relative;
@@ -78,7 +78,7 @@
     padding: 18px 4vw 12px 4vw;
   }
   .profile-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
 }
@@ -95,6 +95,7 @@
   #farmerForm, .login-form {
     padding: 10px 2vw 8px 2vw;
   }
+  
 }
 /* Center login form and heading */
 .login-center {
@@ -111,7 +112,7 @@
   align-items: center;
   padding: 18px 24px 10px 24px;
   background: #e8f5e9;
-  border-radius: 0 0 14px 14px;
+  border-radius: 14px 14px 0px 0px;
   box-shadow: 0 2px 8px rgba(46,125,50,0.04);
   margin-bottom: 18px;
 }
