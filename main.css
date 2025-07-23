@@ -286,7 +286,7 @@ body {
   padding: 20px;
   background-color: #f5f5f5ad; /* 60%: light neutral background */
   /* Crop farmland with cattle and chickens */
-  background-image: url('images/crop-sun.jpg'); /* Crop farm with cattle */
+  background-image: url('crop-sun.jpg'); /* Crop farm with cattle */
   /* If you want a more specific image with chickens, replace the above URL with a suitable one. */
   background-size: cover;
   background-repeat: no-repeat;
