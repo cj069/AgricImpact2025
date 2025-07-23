@@ -1,3 +1,24 @@
+/* Footer styles */
+.main-footer {
+  width: 100%;
+  background: rgba(232, 245, 233, 0.7); /* Same as header but with reduced opacity */
+  color: #2e7d32;
+  text-align: center;
+  padding: 18px 0 12px 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-size: 1.05rem;
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0 -2px 8px rgba(46,125,50,0.04);
+  margin-top: 32px;
+  z-index: 2;
+}
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
 /* Header flex container for h1 and nav */
 .header-flex {
   display: flex;
